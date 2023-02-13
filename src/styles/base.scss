@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+$red: #e60000;
+$purple: #9C2AA0;
+$green: #428600;
+$orange: #EB9700;
+$blue: #007E92;
+$gold: #906702;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+}
+em{font-style: normal}
+body{
+  color: #333333;
+  font-family: CustomFont, Arial, sans-serif;
+  font-size: 18px;
+    line-height: 23px;
+    font-weight: normal;
+}
+:focus {
+  outline: 0;
+}
+ol, ul {
+  list-style: none;
+}
+input, textarea, button{
+    font-family: CustomFont, Arial, sans-serif;
+    border-radius: 0;
+}
+[hidden] {
+  display: none!important;
+}
+a, a:active, a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+
+.scrollbar--custom::-webkit-scrollbar-track{
+  border-radius: 13px;
+  background-color: rgba(175, 175, 175, 0.5);
+}
+.scrollbar--custom::-webkit-scrollbar{
+  width: 6px;
+  background-color: rgba(175, 175, 175, 0.5);
+}
+.scrollbar--custom::-webkit-scrollbar-thumb{
+  border-radius: 2px;
+  background-color: rgba(67,67,67,.9);
+}
+.light_scrollbar-custom::-webkit-scrollbar-track {
+    border-radius: 13px;
+    background-color: rgba(67,67,67,.07)
+}
+.light_scrollbar-custom::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(67,67,67,.09)
+}
+.light_scrollbar-custom::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: hsla(0,0%,68.6%,.5)
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+}
+.text-center{
+  text-align: center;
+}
+ul, ol{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px;
+  li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+ol {
+  list-style-type: decimal;
+}
+@media (max-width: 768px){
+  body{
+      font-size: 16px;
+      line-height: 21px;
+  }
+}
